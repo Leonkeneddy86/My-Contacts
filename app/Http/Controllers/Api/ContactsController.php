@@ -28,7 +28,8 @@ class ContactsController extends Controller
 
         $contact = Contacts::create($validatedData);
 
-        return response()->json($contact, 201);
+        return response()->json($contact, 200);
+        
     }
 
     public function update(Request $request, string $id)
